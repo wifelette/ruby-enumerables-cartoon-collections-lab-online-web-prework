@@ -21,10 +21,9 @@ def find_the_cheese(array)
   array.each do |item|
     if cheese_types.include?(item)
       return item
-    end
   end
 
-  # array.find do |item|
-  #   cheese_types.include?(item)
-  # end
+  array.find do |item|
+    cheese_types.include?(item)
+  end
 end
